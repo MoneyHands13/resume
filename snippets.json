@@ -1,0 +1,9 @@
+{
+	"html": {
+		"snippets": {
+			"sts": "script[lang='ts']",
+			"scs": "style[lang='scss']"
+		}
+	},
+	"css": { "snippets": {} }
+}

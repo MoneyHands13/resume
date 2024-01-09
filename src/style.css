@@ -1,0 +1,126 @@
+:root {
+	--light-bg-ivory: #fffff0;
+	--light-bg-marble: #f2f8fc;
+	--light-bg-pearl: #fcfcf7;
+	--light-bg-lavender: #f4f1f8;
+	--light-bg-cs: #f8f7f4;
+	--dark-bg-charcoal: #21242a;
+	--dark-bg-licorice: #161110;
+	--dark-bg-deep: #101923;
+	--dark-bg-obsidian: #08100c;
+	--dark-bg-smokie: #23262a;
+	--dark-bg-alien: #1a2228;
+	--dark-bg-neutral: #232325;
+
+	--text-on-light: #222;
+	--text-on-dark: var(--light-bg-cs);
+
+	--border-radius: 1rem;
+	--padding: 1rem;
+	--gap: 1rem;
+
+	--fs: 1rem;
+	--lh: 1.5;
+
+	--h1-fs: 5em;
+	--h2-fs: calc(var(--h1-fs) / 1.618);
+	--h3-fs: calc(var(--h2-fs) / 1.618);
+
+	/* font-family: 'Satoshi-Variable';
+	font-family: 'Satoshi-VariableItalic';
+	font-family: 'Satoshi-Light';
+	font-family: 'Satoshi-LightItalic';
+	font-family: 'Satoshi-Regular';
+	font-family: 'Satoshi-Italic';
+	font-family: 'Satoshi-Medium';
+	font-family: 'Satoshi-MediumItalic';
+	font-family: 'Satoshi-Bold';
+	font-family: 'Satoshi-BoldItalic';
+	font-family: 'Satoshi-Black';
+	font-family: 'Satoshi-BlackItalic'; */
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+	margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	scroll-behavior: smooth;
+	color: var(--dark-bg-obsidian);
+	background-color: var(--light-bg-lavender);
+
+	font-family: 'Satoshi', sans-serif;
+
+	h1 {
+		font-size: var(--h1-fs);
+	}
+
+	h2 {
+		font-size: var(--h2-fs);
+	}
+
+	h3 {
+		font-size: var(--h3-fs);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--dark-bg-obsidian);
+		color: var(--light-bg-lavender);
+	}
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+	isolation: isolate;
+}

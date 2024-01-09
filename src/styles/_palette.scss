@@ -1,0 +1,10 @@
+$primary-100: lighten($primary-400, 10%);
+$primary-400: lighten($primary-700, 10%);
+$primary-700: lighten($primary-900, 10%);
+$primary-900: #08100c; //obsidian
+
+$warn-400: #DAF5FF;
+$accent-400: #FFBFA0;
+
+$text-light: #f4f1f8; // lavender
+$text-dark: $primary-900; // obsidian
